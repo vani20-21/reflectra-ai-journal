@@ -146,3 +146,13 @@ Follow these sequential steps to verify all features:
    - Search by keyword, action theme, or tag to instantly filter entries.
 7. **Cross-Tenant Isolation Test**:
    - Direct Firestore requests without matching `request.auth.uid` are rejected by security rules.
+
+## 📸 Application Preview
+
+### 🔐 Secure Authentication
+
+![REFLECTRA Secure Authentication](images/reflectra_login.png)
+
+### 🤖 AI-Powered Reflection Workspace
+
+![REFLECTRA AI Journal](images/reflectra_ai.png)
