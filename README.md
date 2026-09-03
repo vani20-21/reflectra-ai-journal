@@ -1,7 +1,8 @@
-# Gemini Journal & Reflections
+# REFLECTRA
 
-A secure, private personal journaling and AI reflection application powered by **Gemini 3.6 Flash**, **Cloud Firestore**, and **Firebase Authentication**.
+### Reflect. Realize. Act.
 
+An AI-powered personal reflection journal that transforms everyday thoughts into meaningful insights and actionable next steps.
 ---
 
 ## Architecture & Security Model
