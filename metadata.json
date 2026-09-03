@@ -1,0 +1,6 @@
+{
+  "name": "Reflectra",
+  "description": "An AI-powered personal reflection workspace. Reflect. Realize. Act.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

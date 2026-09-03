@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "User": {
+      "path": "/users/{userId}",
+      "description": "User profile metadata",
+      "fields": {
+        "uid": { "type": "string", "required": true },
+        "email": { "type": "string", "required": false },
+        "displayName": { "type": "string", "required": false },
+        "photoURL": { "type": "string", "required": false },
+        "createdAt": { "type": "string", "required": true },
+        "lastLoginAt": { "type": "string", "required": true }
+      }
+    },
+    "Interaction": {
+      "path": "/users/{userId}/interactions/{interactionId}",
+      "description": "User journal entry with multi-turn reflections and Gemini AI processing",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "summary": { "type": "string", "required": false },
+        "tags": { "type": "array", "required": false },
+        "turns": {
+          "type": "array",
+          "required": true,
+          "description": "List of multi-turn conversational exchanges containing role (user|assistant), content, timestamp, and mode"
+        },
+        "actionInsights": {
+          "type": "object",
+          "required": false,
+          "description": "Reflection to Action structured outcomes: mainTheme, keyInsight, nextAction, reflectionQuestion, generatedAt, modelUsed"
+        },
+        "createdAt": { "type": "string", "required": true },
+        "updatedAt": { "type": "string", "required": true }
+      }
+    }
+  }
+}

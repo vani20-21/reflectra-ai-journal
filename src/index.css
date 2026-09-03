@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #080A12;
+  --bg-secondary: #10131F;
+  --bg-tertiary: #171B29;
+  
+  --surface: #10131F;
+  --surface-elevated: #171B29;
+  --border: #272C3D;
+
+  --text-primary: #F4F5F9;
+  --text-secondary: #9AA1B5;
+  --text-muted: #6B7280;
+
+  --primary-violet: #7C6CF2;
+  --bright-violet: #947CFF;
+  --accent-success: #67D9B0;
+}
+
+/* Background Atmosphere Layers */
+.aurora-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #080A12;
+}
+
+.aurora-glow-1 {
+  position: absolute;
+  top: -12%;
+  left: 18%;
+  width: 750px;
+  height: 750px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(124, 108, 242, 0.08) 0%, rgba(124, 108, 242, 0) 70%);
+  filter: blur(120px);
+}
+
+.aurora-glow-2 {
+  position: absolute;
+  top: 20%;
+  right: -8%;
+  width: 680px;
+  height: 680px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(148, 124, 255, 0.06) 0%, rgba(148, 124, 255, 0) 65%);
+  filter: blur(120px);
+}
+
+.aurora-glow-3 {
+  position: absolute;
+  bottom: -15%;
+  left: -5%;
+  width: 700px;
+  height: 700px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(103, 217, 176, 0.04) 0%, rgba(103, 217, 176, 0) 65%);
+  filter: blur(130px);
+}
+
+.dot-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 90% 90% at 50% 50%, black 60%, transparent 100%);
+  opacity: 0.55;
+}
+
+/* Glass panel utility classes */
+.glass-surface {
+  background: #10131F;
+  border: 1px solid #272C3D;
+}
+
+.glass-surface-elevated {
+  background: #171B29;
+  border: 1px solid #272C3D;
+}
+
+.glass-surface-subtle {
+  background: rgba(16, 19, 31, 0.7);
+  border: 1px solid rgba(39, 44, 61, 0.6);
+}
+
+/* Subtle premium dark scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #272C3D;
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #3A4259;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
